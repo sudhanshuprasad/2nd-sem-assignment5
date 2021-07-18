@@ -36,8 +36,8 @@ public class Main {
                 end = newNode;
             }else {
                 newNode.previous=end;
+                end.next=newNode;
                 newNode.next=null;
-                end=newNode;
             }
 //            System.out.println("check");
             System.out.println("add more?(y/n) ");
@@ -68,7 +68,7 @@ public class Main {
 	        System.out.println("0. Exit ");
 	        System.out.println("1. Create ");
 	        System.out.println("2. Display ");
-	        System.out.println("3. Search ");
+//	        System.out.println("3. Search ");
 	        choice=sc.nextInt();
 	        switch (choice){
                 case 0:
